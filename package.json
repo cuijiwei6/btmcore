@@ -2,19 +2,19 @@
   "name": "byteballcore",
   "description": "Byteball Core",
   "author": "Byteball",
-  "version": "0.2.78",
+  "version": “0.2.78”,
   "keywords": [
     "byteball",
     "multisignature"
   ],
-  "homepage": "https://github.com/intervalue-hashnet/byteballcore",
+  "homepage": "https://github.com/byteball/byteballcore",
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/intervalue-hashnet/byteballcore.git",
+    "url": "git://github.com/byteball/byteballcore.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/intervalue-hashnet/byteballcore/issues"
+    "url": "https://github.com/byteball/byteballcore/issues"
   },
   "browser": {
     "request": "browser-request",
