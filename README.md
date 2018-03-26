@@ -1,6 +1,6 @@
 # InterValue core
 
-This is a library used in [InterValue](https://inve.one) clients.  Never used directly.  Some of the clients that require the library:
+This is a library used in [InterValue](http://inve.one) clients.  Never used directly.  Some of the clients that require the library:
 
 * [InterValue](../../../intervalue) - GUI wallet for Mac, Windows, Linux, iOS, and Android.
 * [Headless InterValue](../../../headless-intervalue) - headless wallet, primarily for server side use.
