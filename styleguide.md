@@ -1,6 +1,6 @@
 # Style Guide
 
-This document defines the code style rules for all intervalue projects, i.e. all projects under https://github.com/intervalue, not just this repo intervaluecore.
+This document defines the code style rules for all intervalue projects, i.e. all projects under https://github.com/intervalue-hashnet, not just this repo intervaluecore.
 
 ## General principle
 

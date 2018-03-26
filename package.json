@@ -7,14 +7,14 @@
     "intervalue",
     "multisignature"
   ],
-  "homepage": "https://github.com/intervalue/intervaluecore",
+  "homepage": "https://github.com/intervalue-hashnet/intervaluecore",
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/intervalue/intervaluecore.git",
+    "url": "git://github.com/intervalue-hashnet/intervaluecore.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/intervalue/intervaluecore/issues"
+    "url": "https://github.com/intervalue-hashnet/intervaluecore/issues"
   },
   "browser": {
     "request": "browser-request",
