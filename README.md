@@ -1,6 +1,6 @@
 # InterValue core
 
-This is a library used in [InterValue](https://inve.one) clients.  Never used directly.  Some of the clients that require the library:
+This is a library used in [InterValue](http://inve.one) clients.  Never used directly.  Some of the clients that require the library:
 
 * [InterValue](../../../intervalue) - GUI wallet for Mac, Windows, Linux, iOS, and Android.
 * [Headless InterValue](../../../headless-intervalue) - headless wallet, primarily for server side use.
@@ -74,7 +74,7 @@ To lower disk load and increase sync speed, you can optionally disable flushing 
 
 InterValue network works over secure WebSocket protocol wss://.  To accept incoming connections, you'll need a valid TLS certificate (you can get a free one from [letsencrypt.org](https://letsencrypt.org)) and a domain name (you can get a free domain from [Freenom](http://www.freenom.com/)).  Then you accept connections on standard port 443 and proxy them to your locally running intervalue daemon.
 
-This is an example configuration for nginx to accept websocket connections at wss://inve07.hashproject.net/bb and forward them to locally running daemon that listens on port 6611:
+This is an example configuration for nginx to accept websocket connections at wss://intervalue.one/bb and forward them to locally running daemon that listens on port 6611:
 
 ```nginx
 server {
@@ -82,14 +82,14 @@ server {
 	listen [::]:80 default_server;
 	listen 443 ssl;
 	listen [::]:443 ssl;
-	ssl_certificate "/etc/letsencrypt/live/inve07.hashproject.net/fullchain.pem";
-	ssl_certificate_key "/etc/letsencrypt/live/inve07.hashproject.net/privkey.pem";
+	ssl_certificate "/etc/letsencrypt/live/intervalue.one/fullchain.pem";
+	ssl_certificate_key "/etc/letsencrypt/live/intervalue.one/privkey.pem";
 
-	if ($host != "inve07.hashproject.net$) {
-		rewrite ^(.*)$ https://inve07.hashproject.net$1 permanent;
+	if ($host != "intervalue.one") {
+		rewrite ^(.*)$ https://intervalue.one$1 permanent;
 	}
 	if ($https != "on") {
-		rewrite ^(.*)$ https://inve07.hashproject.net$1 permanent;
+		rewrite ^(.*)$ https://intervalue.one$1 permanent;
 	}
 
 	location = /bb {
