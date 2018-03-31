@@ -1,6 +1,6 @@
 # InterValue core
 
-This is a library used in [InterValue](http://inve.one) clients.  Never used directly.  Some of the clients that require the library:
+This is a library used in [InterValue](https://inve.one) clients.  Never used directly.  Some of the clients that require the library:
 
 * [InterValue](../../../intervalue) - GUI wallet for Mac, Windows, Linux, iOS, and Android.
 * [Headless InterValue](../../../headless-intervalue) - headless wallet, primarily for server side use.
@@ -82,14 +82,14 @@ server {
 	listen [::]:80 default_server;
 	listen 443 ssl;
 	listen [::]:443 ssl;
-	ssl_certificate "/etc/letsencrypt/live/intervalue.one/fullchain.pem";
-	ssl_certificate_key "/etc/letsencrypt/live/intervalue.one/privkey.pem";
+	ssl_certificate "/etc/letsencrypt/live/inve07.hashproject.net/fullchain.pem";
+	ssl_certificate_key "/etc/letsencrypt/live/inve07.hashproject.net/privkey.pem";
 
-	if ($host != "intervalue.one") {
-		rewrite ^(.*)$ https://intervalue.one$1 permanent;
+	if ($host != "inve07.hashproject.net$) {
+		rewrite ^(.*)$ https://inve07.hashproject.net$1 permanent;
 	}
 	if ($https != "on") {
-		rewrite ^(.*)$ https://intervalue.one$1 permanent;
+		rewrite ^(.*)$ https://inve07.hashproject.net$1 permanent;
 	}
 
 	location = /bb {
