@@ -3,15 +3,15 @@
 
 exports.COUNT_WITNESSES = 12;
 exports.MAX_WITNESS_LIST_MUTATIONS = 1;
-exports.TOTAL_WHITEBYTES = 1e15;
+exports.TOTAL_WHITEBYTES = 2*1e9;
 exports.MAJORITY_OF_WITNESSES = (exports.COUNT_WITNESSES%2===0) ? (exports.COUNT_WITNESSES/2+1) : Math.ceil(exports.COUNT_WITNESSES/2);
 exports.COUNT_MC_BALLS_FOR_PAID_WITNESSING = 100;
 
 exports.version = '1.0dev';
 exports.alt = '3';
 
-exports.GENESIS_UNIT = '3gLI9EnI2xe3WJVPwRg8s4CB24ruetuddS0wYa2EI3c=';
-exports.BLACKBYTES_ASSET = 'pXDg6e1hgge/g/vCLjJZRgowm1W1EXpcHOISbP+j97A=';
+exports.GENESIS_UNIT = 'PdlPb7RlgfBd3noUIfRKXrtMOccaezZeH8ssABVUjzs=';
+exports.BLACKBYTES_ASSET = 'WqlNRGo+ubt1kxWETTgFv0Xpni5kf3429TewuPnrEh8=';
 
 exports.HASH_LENGTH = 44;
 exports.PUBKEY_LENGTH = 44;
