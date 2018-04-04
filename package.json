@@ -2,7 +2,7 @@
   "name": "intervaluecore",
   "description": "InterValue Core",
   "author": "InterValue",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "keywords": [
     "intervalue",
     "multisignature"
@@ -22,11 +22,9 @@
   },
   "dependencies": {
     "async": "^1.5.2",
-    "bitcore-mnemonic": "~1.0.0",
     "lodash": "^4.6.1",
     "longjohn": "^0.2.11",
     "mysql": "^2.10.2",
-    "node4mailer": "git+https://github.com/edemaine/node4mailer.git",
     "secp256k1": "^3.1.0",
     "socks": "1.1.10",
     "sqlite3": "^3.1.4",

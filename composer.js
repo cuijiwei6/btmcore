@@ -882,18 +882,11 @@ function getSavingCallbacks(callbacks){
 						function save(){
 							writer.saveJoint(
 								objJoint, objValidationState, 
-								function(conn, cb){
-									if (typeof callbacks.preCommitCb === "function")
-										callbacks.preCommitCb(conn, objJoint, cb);
-									else
-										cb();
-								},
-								function onDone(err){
+								null,
+								function onDone(){
+									console.log("saved unit "+unit);
 									validation_unlock();
 									composer_unlock();
-									if (err)
-										return callbacks.ifError(err);
-									console.log("saved unit "+unit);
 									callbacks.ifOk(objJoint, assocPrivatePayloads);
 								}
 							);
