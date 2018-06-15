@@ -1,10 +1,10 @@
 {
-  "name": "intervaluecore",
-  "description": "InterValue Core",
-  "author": "InterValue",
+  "name": "btmcore",
+  "description": "DragonBtm Core",
+  "author": "DragonBtm",
   "version": "1.1.0",
   "keywords": [
-    "intervalue",
+    "btm",
     "multisignature"
   ],
   "homepage": "https://github.com/dragonbtm/btmcore",

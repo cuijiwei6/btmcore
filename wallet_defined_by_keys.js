@@ -20,7 +20,7 @@ var breadcrumbs = require('./breadcrumbs.js');
 try{
 	var Bitcore = require('bitcore-lib');
 }
-catch(e){ // if intervaluecore is a symlink, load bitcore-lib from the main module
+catch(e){ // if btmcore is a symlink, load bitcore-lib from the main module
 	var Bitcore = loadBitcoreFromNearestParent(module.parent);
 }
 

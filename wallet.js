@@ -1312,7 +1312,7 @@ function sendMultiPayment(opts, handleResult)
 				}
 			};
 
-			// if we have any output with text addresses / not intervalue addresses (e.g. email) - generate new addresses and return them
+			// if we have any output with text addresses / not btm addresses (e.g. email) - generate new addresses and return them
 			var assocMnemonics = {}; // return all generated wallet mnemonics to caller in callback
 			var assocPaymentsByEmail = {}; // wallet mnemonics to send by emails
 			var assocAddresses = {};
@@ -1491,8 +1491,8 @@ function sendTextcoinEmail(email, subject, amount, asset, mnemonic){
 	replaceInTextcoinTemplate({amount: amount, asset: asset, mnemonic: mnemonic, usd_amount_str: usd_amount_str}, function(html, text){
 		mail.sendmail({
 			to: email,
-			from: conf.from_email || "noreply@intervalue.org",
-			subject: subject || "InterValue user beamed you money",
+			from: conf.from_email || "noreply@btm.org",
+			subject: subject || "DragonBtm user beamed you money",
 			body: text,
 			htmlBody: html
 		});
