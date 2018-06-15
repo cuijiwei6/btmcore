@@ -921,7 +921,7 @@ function validateAuthor(conn, objAuthor, objUnit, objValidationState, callback){
 	function handleDuplicateAddressDefinition(arrAddressDefinition){
 		if (!bNonserial || objValidationState.arrAddressesWithForkedPath.indexOf(objAuthor.address) === -1)
 			return callback("duplicate definition of address "+objAuthor.address+", bNonserial="+bNonserial);
-		// todo: investigate if this can split the nodes
+		// todo: btmstigate if this can split the nodes
 		// in one particular case, the attacker changes his definition then quickly sends a new ball with the old definition - the new definition will not be active yet
 		if (objectHash.getChash160(arrAddressDefinition) !== objectHash.getChash160(objAuthor.definition))
 			return callback("unit definition doesn't match the stored definition");

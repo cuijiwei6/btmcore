@@ -1,6 +1,6 @@
 # DragonBtm core
 
-This is a library used in [DragonBtm](http://inve.one) clients.  Never used directly.  Some of the clients that require the library:
+This is a library used in [DragonBtm](http://btm.one) clients.  Never used directly.  Some of the clients that require the library:
 
 * [DragonBtm](../../../btm) - GUI wallet for Mac, Windows, Linux, iOS, and Android.
 * [Headless DragonBtm](../../../headless-btm) - headless wallet, primarily for server side use.

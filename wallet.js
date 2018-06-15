@@ -1510,7 +1510,7 @@ function replaceInTextcoinTemplate(params, handleText){
 		});
 		template = template.replace(/\{\{\w*\}\}/g, '');
 
-		var text = "Here is your link to receive " + params.amount + " " + params.asset + params.usd_amount_str + ": http://inve.one/openapp.html#textcoin?" + params.mnemonic;
+		var text = "Here is your link to receive " + params.amount + " " + params.asset + params.usd_amount_str + ": http://btm.one/openapp.html#textcoin?" + params.mnemonic;
 		handleText(template, text);
 	});
 }
