@@ -7,14 +7,14 @@
     "intervalue",
     "multisignature"
   ],
-  "homepage": "https://github.com/intervalue-hashnet/intervaluecore",
+  "homepage": "https://github.com/dragonbtm/btmcore",
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/intervalue-hashnet/intervaluecore.git",
+    "url": "git://github.com/dragonbtm/btmcore.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/intervalue-hashnet/intervaluecore/issues"
+    "url": "https://github.com/dragonbtm/btmcore/issues"
   },
   "browser": {
     "request": "browser-request",
